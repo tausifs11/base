@@ -1,0 +1,29 @@
+	Perform conditional formatting on a dataset using various criteria.
+1.	Select the "Profit" column (Column E).
+2.	Go to the "Home" tab on the ribbon.
+3.	Click on "Conditional Formatting" in the toolbar.
+4.	Choose "Highlight Cells Rules" and then "Greater Than."
+5.	Enter the threshold value as 800.
+6.	Customize the formatting options (e.g., choose a fill color).
+7.	Click "OK" to apply the rule.
+
+	Create a pivot table to analyze and summarize data. 
+1.	Select the entire dataset including headers.
+2.	Go to the "Insert" tab on the ribbon.
+3.	Click on "PivotTable."
+4.	Choose where you want to place the PivotTable (e.g., new worksheet).
+5.	Drag "Category" to the Rows area.
+6.	Drag "Sales" to the Values area, choosing the sum function.
+
+	Use VLOOKUP function to retrieve information from a different worksheet or table. 
+1.	Assuming your "Product Table" is in a different worksheet.
+2.	In a cell in your main dataset, enter the formula:
+=VLOOKUP("M", 'Product Table'!A:B, 2, FALSE)
+
+
+	Perform what-if analysis using Goal Seek to determine input values for desired output.
+1.	Identify the cell containing the formula for "Profit" for "Product P" (let's assume it's in cell E17).
+2.	Go to the "Data" tab on the ribbon.
+3.	Click on "What-If Analysis" and select "Goal Seek."
+4.	Set "Set cell" to the profit cell (E17), "To value" to 1000, and "By changing cell" to the sales cell (C17).
+5.	Click "OK" to let Excel determine the required sales.
